@@ -9,9 +9,9 @@
   },
   "favicon": "/favicon.svg",
   "navigation": {
-    "products": [
+    "dropdowns": [
       {
-        "product": "Guides",
+        "dropdown": "Guides",
         "groups": [
           {
             "group": "Getting started",
@@ -48,7 +48,7 @@
         ]
       },
       {
-        "product": "API reference",
+        "dropdown": "API reference",
         "groups": [
           {
             "group": "API documentation",
