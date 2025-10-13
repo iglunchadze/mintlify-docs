@@ -14,7 +14,15 @@
         "tab": "Guides",
         "menu": [
           {
-            "item": "Getting started",
+            "item": "VMs",
+            "pages": [
+              "index",
+              "quickstart",
+              "development"
+            ]
+          },
+          {
+            "item": "Disks",
             "pages": [
               "index",
               "quickstart",
