@@ -1,0 +1,87 @@
+---
+title: "Release notes"
+description: "What's new in Nebius AI Cloud services."
+---
+
+<Update label="November 17–23, 2025" tags={["Managed Service for Kubernetes", "Applications"]}>
+  ## Managed Service for Kubernetes
+
+  - _Added:_ Managed Kubernetes now performs health checks on nodes, and automatically recovers nodes that are not ready or have issues with the boot disk or GPUs. Learn more.
+
+  ## Applications
+
+  - _Added:_ Four NVIDIA NIM microservices are now available as standalone applications. These microservices provide models from the NVIDIA BioNeMo Framework for computational drug discovery: Boltz-2, Evo 2, GenMol and MolMIM. Learn more.
+  - _Added:_ The NVIDIA Blueprint for generative virtual screening is now available as an application for Managed Kubernetes. The blueprint provides an AI-driven pipeline to design optimized small molecules efficiently. Learn more.
+</Update>
+
+<Update label="November 10–16, 2025" tags={["Compute", "Billing", "Documentation"]}>
+  ## Compute
+
+  - _Updated:_ You can now only delay a maintenance of Compute virtual machines two times, up to seven days each time.
+
+  ## Billing
+
+  - _Added:_ For residents of Texas and Washington, US, Nebius now calculates taxes in accordance with United States tax law and includes them in invoices. Learn more.
+
+  ## Documentation
+
+  - _Added:_ A new document about security is added and includes an article about [encryption in Nebius AI Cloud](https://docs.nebius.com/security/encryption).
+  - _Added:_ Slurm and Soperator docs now include an article about [managing access to files](https://docs.nebius.com/slurm-soperator/storage/manage-access).
+  - _Fixed:_ The article about [viewing logs of Soperator clusters](https://docs.nebius.com/slurm-soperator/monitoring/logs#browser) now includes correct LogsQL queries.
+  - _Fixed:_ In the tutorial about [setting up NodeLocal DNSCache in Managed Kubernetes clusters](https://docs.nebius.com/kubernetes/networking/nodelocal-dns-cache), the ConfigMap within the `node-local-dns.yaml` manifest has been corrected.
+</Update>
+
+<Update label="November 3–9, 2025" tags={["Compute", "Managed Service for Kubernetes", "Documentation"]}>
+  ## Compute
+
+  - _Updated:_ The default quota on the number of NVIDIA H200 GPUs in the `us-central1` region per tenant is now 16, down from 32. The change does not affect existing tenants. See all Compute quotas.
+
+  ## Managed Service for Kubernetes
+
+  - _Updated:_ When you [manually install the NVIDIA GPU Operator](https://docs.nebius.com/kubernetes/gpu/set-up#drivers-install) on your InfiniBand-interconnected nodes, GPUDirect RDMA is now enabled by default.
+
+  ## Documentation
+
+  - _Added:_ The overview of resource management now includes a detailed description and a diagram of the [resource hierarchy](https://docs.nebius.com/iam/overview#resources).
+  - _Added:_ The article about [configuring lifecycle rules in Object Storage](https://docs.nebius.com/object-storage/objects/configure-lifecycle-rules) now includes instructions for the web console.
+  - _Added:_ The document about gRPC API now includes an article about [using gRPCurl to invoke methods](https://docs.nebius.com/grpc-api/calls/invoke-methods).
+  - _Fixed:_ Articles about routing now state that the [default egress gateway](https://docs.nebius.com/vpc/routing/overview#default-rules-egress-gateway) can only be used as the next hop in routes with the destination CIDR block `0.0.0.0/0`.
+</Update>
+
+<Update label="October 27–November 2, 2025" tags={["Managed Service for PostgreSQL", "Documentation"]}>
+  ## Managed Service for PostgreSQL
+
+  - _Added:_ Monitoring dashboards for Managed PostgreSQL clusters now include two new [connection pooler metrics](https://docs.nebius.com/postgresql/monitoring#pooler-metrics), **Pooler clients active** and **Pooler clients waiting**.
+
+  ## Documentation
+
+  - _Added:_ The article about storage classes in Object Storage now includes an instruction about [moving an uploaded object between storage classes](https://docs.nebius.com/object-storage/storage-classes#upload).
+</Update>
+
+<Update label="October 20–26, 2025" tags={["Managed Service for Kubernetes"]}>
+  ## Managed Service for Kubernetes
+
+  - _Added:_ Managed Kubernetes now supports Kubernetes 1.32. This version is selected for new clusters and node groups by default. See the [overview of Kubernetes versions](https://docs.nebius.com/kubernetes/versions).
+</Update>
+
+<Update label="September 29–October 5, 2025" tags={["Compute", "Managed Service for MLflow"]}>
+  ## Compute
+
+  - _Added:_ You can now create preemptible virtual machines with NVIDIA B200 GPUs in the `us-central1` region.
+
+  ## Managed Service for MLflow
+
+  - _Removed:_ New clusters no longer support the `small` size.
+</Update>
+
+<Update label="June 23–29, 2025" tags={["Compute"]}>
+  ## Compute
+
+  - _Updated:_ The size of a virtual machine's boot disk is now limited to a maximum of 30 TiB. See the guide to [creating boot disks](https://docs.nebius.com/compute/storage/manage#boot).
+</Update>
+
+<Update label="February 10–16, 2025" tags={["Managed Service for PostgreSQL"]}>
+  ## Managed Service for PostgreSQL
+
+  - _Updated:_ The pgvector extension installed on Managed PostgreSQL clusters is upgraded from version 0.7.2 to 0.8.0.
+</Update>
